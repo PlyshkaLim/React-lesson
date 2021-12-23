@@ -1,0 +1,71 @@
+.box select {
+  background-color: #FFFFFF;
+  color: #8E8EA9;
+  border: 1px solid #DCDCE4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 243px;
+  font-size: 14px;
+  padding: 10px 0 10px 16px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  font-family: SF Pro Text, sans-serif;
+  -webkit-appearance: button;
+  appearance: auto;
+  outline: none;
+  margin: 1px;
+}
+
+.box select:focus {
+  border: 2px solid #4945FF;
+  margin: 0;
+  color: #32324D;
+}
+
+.box::before {
+  font-family: SF Pro Text, sans-serif;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+
+}
+
+.box:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(1, 1, 1, 1);
+  /*background-color: rgba(255, 255, 255, 0.2);*/
+}
+
+.box select option {
+  padding: 30px;
+  margin: 10px;
+}
+
+select option {
+  padding: 20px 30px 0 60px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border-top: #222 solid 1px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  pointer-events: none;
+  order: 2;
+  z-index: 1;
+  transition: background .4s ease-in-out;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+
+option:hover {
+  color: red;
+}
